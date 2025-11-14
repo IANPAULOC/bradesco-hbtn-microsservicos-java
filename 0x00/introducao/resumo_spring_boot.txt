@@ -1,1 +1,22 @@
-Microsserviços são um estilo arquitetural em que uma aplicação é dividida em serviços pequenos, autônomos e especializados, que interagem por APIs. Ao contrário da arquitetura monolítica, na qual todas as funções ficam acopladas em uma única base de código e implantação, os microsserviços permitem que cada responsabilidade seja implementada, testada, implantada e escalada de forma independente. Essa abordagem traz benefícios importantes: resiliência, pois falhas em um serviço tendem a ficar isoladas e não derrubam todo o sistema; escalabilidade, porque é possível ajustar recursos apenas para os serviços que exigem mais capacidade; e agilidade, já que times menores conseguem desenvolver e liberar funcionalidades com ciclos mais curtos. A comunicação entre microsserviços pode ocorrer de maneiras diversas conforme necessidade: via HTTP/REST para interações síncronas; por mensageria usando filas ou brokers (por exemplo, RabbitMQ) para comunicação assíncrona; e por eventos, em arquiteturas orientadas a eventos, com ferramentas como Kafka para propagar mudanças de estado. Em suma, microsserviços promovem modularidade, flexibilidade operacional e facilidade de evolução, porém exigem atenção a aspectos como governança, observabilidade, gestão de dados distribuídos e infraestrutura de comunicação. Também exige testes automatizados, automação de deploy, monitoramento centralizado e políticas claras de versionamento, segurança, observabilidade e recuperação para operação confiável contínua.
+O que é Spring Boot Framework?
+O Spring Boot é um framework que simplifica a criação e configuração de aplicações Java, sendo parte integrante do ecossistema Spring. Ele permite iniciar projetos rapidamente, com mínima configuração manual, promovendo agilidade e produtividade no desenvolvimento.
+
+Quais são os benefícios e recursos que Spring Boot fornece?
+Entre os principais benefícios estão a facilidade de configuração, que permite ao desenvolvedor focar na lógica de negócio, e a rápida inicialização de projetos.
+Alguns recursos oferecidos incluem:
+- Servidor embutido (como Tomcat) já configurado;
+- Uso de anotações para reduzir boilerplate;
+- Abstrações para integração com banco de dados, segurança, preenchimento de formulários, entre outros;
+- Suporte nativo a práticas modernas como REST APIs e microsserviços.
+
+
+Como é feita a adição de novas dependências (JPA, Hibernate, etc…) ?
+As dependências podem ser adicionadas diretamente no arquivo pom.xml (em projetos Maven) ou build.gradle (em projetos Gradle). Além disso, o Spring Boot oferece a opção Spring → Add Starters, que facilita a inclusão de módulos como JPA, Hibernate, Web, Security, entre outros, com configurações prontas para uso
+
+
+Na sua opinião, qual é a melhor IDE para trabalhar com o Spring Boot: Spring Tools Suites, IntelliJ IDEA, Eclipse ou NetBeans ?
+O Spring Tool Suite (STS) é uma excelente opção, pois é uma versão personalizada do Eclipse com suporte nativo ao Spring. Ele já vem com os principais plugins e ferramentas integradas, otimizando o desenvolvimento com Spring Boot. Alternativamente, o IntelliJ IDEA também é altamente recomendado por sua inteligência de código e integração avançada com o ecossistema Spring.
+
+
+O que é Spring Initializr?
+O Spring Initializr é uma ferramenta online que facilita a criação de projetos Spring Boot. Ele permite configurar rapidamente os detalhes iniciais do projeto — como dependências, linguagem, versão do Java e tipo de empacotamento — gerando um pacote pronto para importar na IDE e começar a desenvolver.
